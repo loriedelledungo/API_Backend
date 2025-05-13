@@ -9,9 +9,9 @@ def chat():
     user_input = request.json.get('message', '').lower()
     
     if user_input == 'hi':
-        return jsonify({'reply': 'Hello!'})
+        return jsonify({'reply': 'Hello, from loriedelle!'})
     else:
-        return jsonify({'reply': f'You said: {user_input}'})
+        return jsonify({'reply': f'What?'})
 
 if __name__ == '__main__':
     app.run(debug=True)
